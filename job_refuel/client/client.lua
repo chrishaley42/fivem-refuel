@@ -1,5 +1,3 @@
--- TODO add to Config
-local EnableBlips = true
 local RefuelJobLocationVector = {['x'] = 582.14,  ['y'] = -2722.71,  ['z'] = 6.19}
 local isNearJob = true
 local isWorkingRefillJob = false
@@ -14,7 +12,7 @@ end)
 
 -- Create blips
 Citizen.CreateThread(function()
-	if not EnableBlips then return end
+	if not Config.EnableBlips then return end
         -- add Vector to Config
         local RefuelJobLocation = AddBlipForCoord(582.14, -2722.71, 6.19)
 		SetBlipSprite(RefuelJobLocation, 541)
