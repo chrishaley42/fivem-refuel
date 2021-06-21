@@ -83,7 +83,6 @@ Citizen.CreateThread(function()
                 local distance = GetDistanceBetweenCoords(coords, Config.TruckJobZone[i], true)
 
                 if distance < Config.TruckDrawDistance then
-                    print("Hello!")
                     DrawMarker(Config.MarkerType, Config.TruckJobZone[i], 0.0, 0.0, 0.0, 0, 0.0, 0.0, Config.ZoneSize.x, Config.ZoneSize.y, Config.ZoneSize.z, Config.MarkerColor.r, Config.MarkerColor.g, Config.MarkerColor.b, 100, false, true, 2, false, false, false, false)
                 end
 
